@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+{% block body %}
+
+<h2>Main Page</h2>
+<p>This is the home page!</p>
+
+<form action="/checkNew" method="POST">
+    <input type="number" name="x" placeholder="First Number" class="form-field"><br>
+    <input type="number" name="y" placeholder="Second Number" class="form-field"><br>
+    <select name="operation">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+    </select><br>
+    <button type="submit" class="add-btn">Check The News</button>
+</form>
+<br>
+<p>This is a website designed to assist you in determining the authenticity of news - whether it's Real or false.</p>
+{% endblock %}
